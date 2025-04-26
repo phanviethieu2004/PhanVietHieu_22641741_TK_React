@@ -15,8 +15,8 @@ function App() {
     <div className="app">
       <Header language={language} setLanguage={setLanguage} />
       <Navbar />
-      <Banner />
       <div className="container">
+        <Banner />
         <MainContent />
       </div>
       <Footer />

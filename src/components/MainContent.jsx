@@ -59,13 +59,14 @@ const MainContent = () => {
                     date: "25-04-2025",
                     isNew: true,
                     hasImage: true,
-                    imageUrl: "/news1.jpg",
+                    imageUrl: "/img/qc1.png",
                   },
                   {
                     id: 2,
                     title: "Hội nghị khoa học quốc tế BAIC 2025 lần 2 tại IUH - Sức mạnh AI trong",
                     date: "22-04-2025",
                     isNew: true,
+
                   },
                 ]}
               />
@@ -79,7 +80,7 @@ const MainContent = () => {
                     date: "24-03-2025",
                     isNew: false,
                     hasImage: true,
-                    imageUrl: "/news2.jpg",
+                    imageUrl: "/img/qc2.png",
                   },
                   {
                     id: 2,
@@ -93,11 +94,11 @@ const MainContent = () => {
 
             {/* Campus Sections */}
             <div className="campus-row">
-              <CampusSection title="PHÂN HIỆU QUẢNG NGÃI" imageUrl="/campus1.jpg" viewMoreLink="#" />
-              <CampusSection title="CƠ SỞ THANH HÓA" imageUrl="/campus2.jpg" viewMoreLink="#" />
+              <CampusSection title="PHÂN HIỆU QUẢNG NGÃI" imageUrl="/img/QN.png" viewMoreLink="#" />
+              <CampusSection title="CƠ SỞ THANH HÓA" imageUrl="/img/TH.png" viewMoreLink="#" />
               <CampusSection
                 title="VIDEO VÀ HÌNH ẢNH"
-                imageUrl="/video-thumbnail.jpg"
+                imageUrl="/img/vd.png"
                 viewMoreLink="#"
                 isVideo={true}
               />

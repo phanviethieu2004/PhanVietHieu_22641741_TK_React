@@ -244,16 +244,18 @@ a {
 /* Banner Styles */
 
 .banner-container {
-    margin: 0;
+    margin: 20px 0;
     width: 100%;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .banner-slider {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 350px;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .banner-slide {
@@ -814,7 +816,7 @@ a {
         grid-template-columns: 1fr;
     }
     .banner-slider {
-        height: 200px;
+        height: 180px;
     }
     .banner-indicators {
         bottom: 10px;

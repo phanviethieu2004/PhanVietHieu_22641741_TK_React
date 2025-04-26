@@ -29,10 +29,10 @@ const Header = ({ language, setLanguage }) => {
               LIÊN HỆ
             </a>
             <button className={`lang-btn ${language === "vi" ? "active" : ""}`} onClick={() => setLanguage("vi")}>
-              <img src="/vi.png" alt="Tiếng Việt" />
+              <img src="/img/Vn.webp" alt="Tiếng Việt" />
             </button>
             <button className={`lang-btn ${language === "en" ? "active" : ""}`} onClick={() => setLanguage("en")}>
-              <img src="/en.png" alt="English" />
+              <img src="/img/UK.svg" alt="English" />
             </button>
           </div>
         </div>
