@@ -243,14 +243,86 @@ a {
 
 /* Banner Styles */
 
-.banner {
-    margin: 20px 0;
+.banner-container {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
 }
 
 .banner-image {
     width: 100%;
-    height: auto;
-    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.banner-nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-nav-button.prev {
+    left: 20px;
+}
+
+.banner-nav-button.next {
+    right: 20px;
+}
+
+.banner-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.banner-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.banner-indicator.active {
+    background-color: white;
 }
 
 
@@ -675,6 +747,9 @@ a {
     .sidebar-submenu-panel {
         width: 500px;
     }
+    .banner-slider {
+        height: 300px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -697,6 +772,13 @@ a {
     .footer-stats {
         flex-direction: column;
         gap: 10px;
+    }
+    .banner-slider {
+        height: 250px;
+    }
+    .banner-nav-button {
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -730,5 +812,15 @@ a {
     }
     .footer-links-row {
         grid-template-columns: 1fr;
+    }
+    .banner-slider {
+        height: 200px;
+    }
+    .banner-indicators {
+        bottom: 10px;
+    }
+    .banner-indicator {
+        width: 8px;
+        height: 8px;
     }
 }
