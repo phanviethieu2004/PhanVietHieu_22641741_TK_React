@@ -1,52 +1,52 @@
+import { Facebook, Twitter, Linkedin } from "lucide-react"
+
 const Footer = () => {
-    return (
-      <footer className="footer">
-        <div className="container">
-          <div className="footer-content">
-            <div className="footer-section">
-              <h4 className="footer-title">ĐẠI HỌC CÔNG NGHIỆP TP. HỒ CHÍ MINH</h4>
-              <p>Địa chỉ: Số 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, TP. HCM</p>
-              <p>Điện thoại: (028) 38940390</p>
-              <p>Fax: (028) 38946268</p>
-              <p>Email: dhcn@iuh.edu.vn</p>
+  return (
+    <footer className="footer">
+      <div className="container">
+        <div className="footer-main">
+          <div className="footer-logo">
+            <img src="/logo-footer.png" alt="IUH Logo" className="footer-logo-img" />
+          </div>
+          <div className="footer-stats">
+            <div className="stats-item">
+              <span className="stats-label">Số lượt truy cập:</span>
+              <span className="stats-value">288,835,373</span>
             </div>
-            <div className="footer-section">
-              <h4 className="footer-title">LIÊN KẾT</h4>
-              <ul className="footer-links">
-                <li>
-                  <a href="#">Bộ Công Thương</a>
-                </li>
-                <li>
-                  <a href="#">Bộ Giáo dục và Đào tạo</a>
-                </li>
-                <li>
-                  <a href="#">Cổng thông tin sinh viên</a>
-                </li>
-                <li>
-                  <a href="#">Thư viện</a>
-                </li>
-              </ul>
+            <div className="stats-item">
+              <span className="stats-label">Hôm nay:</span>
+              <span className="stats-value">21,726</span>
             </div>
-            <div className="footer-section">
-              <h4 className="footer-title">KẾT NỐI VỚI CHÚNG TÔI</h4>
-              <div className="social-links">
-                <a href="#" className="social-link">
-                  Facebook
-                </a>
-                <a href="#" className="social-link">
-                  Youtube
-                </a>
-                <a href="#" className="social-link">
-                  LinkedIn
-                </a>
-              </div>
+            <div className="stats-item">
+              <span className="stats-label">Đang xem:</span>
+              <span className="stats-value">86</span>
             </div>
           </div>
-          <div className="copyright">© 2025 Đại học Công nghiệp TP. Hồ Chí Minh. All rights reserved.</div>
+          <div className="footer-social">
+            <span className="social-label">Chia sẻ</span>
+            <div className="social-icons">
+              <a href="#" className="social-icon facebook">
+                <Facebook size={20} />
+              </a>
+              <a href="#" className="social-icon twitter">
+                <Twitter size={20} />
+              </a>
+              <a href="#" className="social-icon linkedin">
+                <Linkedin size={20} />
+              </a>
+            </div>
+          </div>
         </div>
-      </footer>
-    )
-  }
-  
-  export default Footer
-  
+        <div className="footer-copyright">
+          <p>© Bản quyền 2015 - Đại học Công nghiệp Thành phố Hồ Chí Minh</p>
+          <p className="copyright-note">
+            Mọi hành động sử dụng nội dung đăng tải trên Website iuh.edu.vn phải có sự đồng ý bằng văn bản của Đại học
+            Công nghiệp Thành phố Hồ Chí Minh.
+          </p>
+        </div>
+      </div>
+    </footer>
+  )
+}
+
+export default Footer

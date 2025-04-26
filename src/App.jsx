@@ -18,8 +18,8 @@ function App() {
         <Navbar />
         <Banner />
         <MainContent />
-        <Footer />
       </div>
+      <Footer />
     </div>
   )
 }
