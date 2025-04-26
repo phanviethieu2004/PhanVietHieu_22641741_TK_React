@@ -40,7 +40,7 @@ const Header = ({ language, setLanguage }) => {
       <div className="main-header">
         <div className="container">
           <div className="logo-container">
-            <img src="/logo.png" alt="IUH Logo" className="logo" />
+            <img src="../img/logo.png" alt="IUH Logo" className="logo w-32 h-16" />
             <div className="university-name">
               <div className="ministry">BỘ CÔNG THƯƠNG</div>
               <div className="university">ĐẠI HỌC CÔNG NGHIỆP TP. HỒ CHÍ MINH</div>
