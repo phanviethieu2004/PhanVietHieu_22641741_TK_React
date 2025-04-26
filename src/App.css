@@ -1,0 +1,524 @@
+:root {
+    --primary-color: #2c3e8f;
+    --secondary-color: #e63946;
+    --text-color: #333;
+    --light-bg: #f5f5f5;
+    --border-color: #ddd;
+    --header-height: 120px;
+    --navbar-height: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Header Styles */
+
+.header {
+    width: 100%;
+}
+
+.top-header {
+    background-color: #2c3e8f;
+    color: white;
+    padding: 5px 0;
+}
+
+.top-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-links {
+    display: flex;
+    gap: 20px;
+}
+
+.top-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.link {
+    font-size: 14px;
+}
+
+.separator {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.lang-btn img {
+    width: 24px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+.lang-btn.active {
+    opacity: 1;
+}
+
+.lang-btn:not(.active) {
+    opacity: 0.7;
+}
+
+.main-header {
+    background-color: rgba(173, 216, 230, 0.5);
+    padding: 15px 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.university-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.ministry {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.university {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.slogan {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+/* Navbar Styles */
+
+.navbar {
+    background-color: var(--primary-color);
+    color: white;
+    height: var(--navbar-height);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    height: 100%;
+}
+
+.home-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-item {
+    position: relative;
+    height: 100%;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover .nav-link,
+.nav-item.active .nav-link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 250px;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu-item {
+    padding: 10px 15px;
+    color: var(--text-color);
+    font-size: 14px;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.3s;
+}
+
+.submenu-item:hover {
+    background-color: var(--light-bg);
+    color: var(--primary-color);
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    height: 30px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-btn {
+    height: 30px;
+    padding: 0 10px;
+    background-color: white;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Banner Styles */
+
+.banner {
+    margin: 20px 0;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/* Main Content Styles */
+
+.main-content {
+    margin: 30px 0;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 30px;
+}
+
+.content-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.news-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar {
+    background-color: var(--light-bg);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sidebar-section {
+    margin-bottom: 20px;
+}
+
+.sidebar-title {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 15px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.sidebar-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-item {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.sidebar-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--primary-color);
+}
+
+
+/* News Section Styles */
+
+.news-section {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.section-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.view-more {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.news-list {
+    padding: 10px;
+}
+
+.news-item {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-image {
+    width: 100px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+.bullet {
+    color: var(--primary-color);
+    font-size: 10px;
+}
+
+.new-badge {
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+.news-date {
+    font-size: 12px;
+    color: #777;
+}
+
+
+/* Footer Styles */
+
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-section p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 992px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    .news-row {
+        grid-template-columns: 1fr;
+    }
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .university {
+        font-size: 20px;
+    }
+    .nav-link {
+        padding: 0 10px;
+        font-size: 12px;
+    }
+    .submenu {
+        width: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .top-header {
+        display: none;
+    }
+    .logo {
+        width: 60px;
+    }
+    .university {
+        font-size: 16px;
+    }
+    .slogan {
+        font-size: 12px;
+    }
+    .nav-menu {
+        overflow-x: auto;
+    }
+    .nav-link {
+        padding: 0 8px;
+        font-size: 11px;
+    }
+}
